@@ -1,0 +1,21 @@
+﻿component,specification
+Imputation,"SimpleImputer(strategy='median'), fitted inside each training fold only"
+Scaling,StandardScaler fitted inside each training fold through a sklearn Pipeline
+Ridge model,RidgeCV; alpha grid from 1e-3 to 1e3 with 25 logarithmic values
+ElasticNet model,"ElasticNetCV; l1_ratio={0.1, 0.5, 0.9}; alpha grid from 1e-3 to 1e2; 3-fold internal CV; max_iter=20000"
+RandomForest model,400 trees; min_samples_leaf=3; random_state=42
+GradientBoosting model,250 trees; learning_rate=0.04; max_depth=2; random_state=42
+XGBoost model,250 trees; max_depth=2; learning_rate=0.04; subsample=0.9; colsample_bytree=0.9; squared-error objective; random_state=42; n_jobs=1
+LightGBM model,250 trees; learning_rate=0.04; num_leaves=7; min_child_samples=8; subsample=0.9; colsample_bytree=0.9; random_state=42
+External-label threshold,Main classification threshold fixed ex ante at 0.50; threshold sweep reported only as sensitivity
+Bootstrap,Country-level paired bootstrap with 1000 resamples for incremental value intervals
+Random seed,42 for sklearn/XGBoost/LightGBM model specifications; 20260526 for revision bootstrap
+Python,3.12.13
+pandas,3.0.1
+numpy,2.3.5
+scikit-learn,1.8.0
+LightGBM package,4.6.0
+XGBoost package,3.2.0
+scipy,1.17.1
+matplotlib,3.10.9
+Repository,Reproducibility package prepared locally; permanent DOI to be inserted before final journal submission
