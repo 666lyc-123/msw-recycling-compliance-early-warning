@@ -1,0 +1,14 @@
+﻿variable,missing_count,missing_share
+geo,0,0.0
+country,0,0.0
+year,0,0.0
+recycling_rate,5,0.009746588693957114
+waste_generated_kg_pc,3,0.005847953216374269
+landfill_rate_proxy,5,0.009746588693957114
+incineration_rate_proxy,11,0.021442495126705652
+circular_material_use_rate,135,0.2631578947368421
+resource_productivity,0,0.0
+environmental_tax_gdp,0,0.0
+gdp_pc_eur,0,0.0
+household_consumption_pc_eur,0,0.0
+population_density,0,0.0
